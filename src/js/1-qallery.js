@@ -1,3 +1,4 @@
+
 const images = [
   {
     preview:
@@ -64,11 +65,8 @@ const images = [
   },
 ];
 const list = document.querySelector('.gallery');
-
 let galleryNewElements = '';
-
 images.forEach(image => {
-  
   galleryNewElements += `
     <li class="gallery-item">
       <a class="gallery-link" href="${image.original}">
@@ -77,8 +75,11 @@ images.forEach(image => {
     </li>
   `;
 });
-
 list.innerHTML = galleryNewElements;
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
-
-
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});

@@ -3,10 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   padding: 24px 156px;
-  gap: 10px;
+  gap: 24px;
   justify-content: center;
-  width: 1440px;
-  height: 696px;
+  max-width: 1128px;
   background: #fff;
   margin: 0;
 }
@@ -17,3 +16,5 @@
   width: 360px;
   height: 200px;
 }
+.sl-wrapper{background: rgba(46, 47, 66, 0.8);}
+
